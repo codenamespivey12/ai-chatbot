@@ -1,0 +1,104 @@
+/* src/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode - Comic Book Theme */
+    --background: 240 10% 97%; /* comic-bg: #F8F8F0 */
+    --foreground: 240 10% 3.9%; /* comic-ink: #222222 */
+
+    --card: 0 0% 100%; /* White card for contrast, or comic-panel */
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 220 80% 50%; /* mojo-blue: #0052CC */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 0 70% 50%; /* mojo-red: #D92E2E */
+    --secondary-foreground: 0 0% 100%; /* White */
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 50 100% 50%; /* mojo-yellow: #FFDC00 */
+    --accent-foreground: 240 10% 3.9%; /* Ink color for text on yellow */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 80%; /* comic-panel for borders: #E0E0D8 or darker */
+    --input: 240 5.9% 90%;
+    --ring: 220 80% 60%; /* Lighter mojo-blue for focus rings */
+
+    --radius: 0.5rem; /* Base border radius for ShadCN */
+  }
+
+  .dark {
+    /* Dark Mode - "Neon Noir Comic" Theme */
+    --background: 240 10% 10%; /* Dark background */
+    --foreground: 0 0% 95%; /* Light text */
+
+    --card: 240 10% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 220 70% 60%; /* Brighter mojo-blue for dark mode */
+    --primary-foreground: 240 10% 5%;
+
+    --secondary: 0 60% 60%; /* Brighter mojo-red */
+    --secondary-foreground: 240 10% 5%;
+
+    --muted: 240 5% 25%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 50 90% 60%; /* Brighter mojo-yellow */
+    --accent-foreground: 240 10% 5%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5% 30%;
+    --input: 240 5% 20%;
+    --ring: 220 70% 70%;
+
+    /* You might want different font weights or styles for dark mode too */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans; /* Default to comic-bg and comic-ink */
+    /* Add some subtle comic-like texture or pattern if desired */
+    /* background-image: url('/path/to/comic-dots-pattern.png'); */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-mojo-red; /* Headings use Bangers font and mojo-red */
+  }
+}
+
+/* Utility class for comic-style borders/shadows */
+.comic-border {
+  @apply border-2 border-comic-ink shadow-comic-strong;
+}
+.comic-border-soft {
+  @apply border border-comic-ink shadow-comic-soft;
+}
+
+/* Example of a "POW!" text style */
+.text-pow {
+  @apply font-heading text-mojo-yellow uppercase tracking-wider text-stroke-comic-ink text-stroke-2;
+  text-shadow: 2px 2px 0px theme('colors.mojo-red.DEFAULT');
+}
+/* Tailwind plugin needed for text-stroke, or use custom CSS */
+/* For simplicity, I'll use text-shadow for a similar effect for now */
