@@ -19,9 +19,9 @@ function PureSuggestedActions({
 }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'Explain it to me like',
-      label: 'I’m five... I just crashed the Mars Rover, and have to repair it.',
-      action: 'Explain this to me like I’m five... and I just crashed the Mars Rover.',
+      title: 'Can you please explain people today',
+      label: 'just dont make no sense',
+      action: 'Can you please explain people today just dont make no sense.',
     },
     {
       title: 'What’s the worst that could',
@@ -34,9 +34,9 @@ function PureSuggestedActions({
       action: 'Give me the dumbest reason why pineapple on pizza is illegal in Italy.',
     },
     {
-      title: 'If I really wanted to',
-      label: 'make things worse, how would I accidentally summon a demon in JavaScript?',
-      action: 'If I really wanted to make things worse, how would I accidentally summon a demon in JavaScript?',
+      title: 'How would I',
+      label: 'accidentally summon a demon in JavaScript?',
+      action: 'How would I accidentally summon a demon in JavaScript?',
     },
   ];
 
