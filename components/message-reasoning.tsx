@@ -69,7 +69,7 @@ export function MessageReasoning({
             style={{ overflow: 'hidden' }}
             className="pl-4 text-zinc-600 dark:text-zinc-400 border-l flex flex-col gap-4"
           >
-            <Markdown>{thinking}</Markdown>
+            <Markdown>{reasoning}</Markdown>
           </motion.div>
         )}
       </AnimatePresence>
