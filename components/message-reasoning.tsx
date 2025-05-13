@@ -35,14 +35,14 @@ export function MessageReasoning({
     <div className="flex flex-col">
       {isLoading ? (
         <div className="flex flex-row gap-2 items-center">
-          <div className="font-medium">Reasoning</div>
+          <div className="font-medium">Mojo is pretending his is a rocket surgeon.</div>
           <div className="animate-spin">
             <LoaderIcon />
           </div>
         </div>
       ) : (
         <div className="flex flex-row gap-2 items-center">
-          <div className="font-medium">Reasoned for a few seconds</div>
+          <div className="font-medium">Thought for a few seconds</div>
           <button
             data-testid="message-reasoning-toggle"
             type="button"
@@ -69,7 +69,7 @@ export function MessageReasoning({
             style={{ overflow: 'hidden' }}
             className="pl-4 text-zinc-600 dark:text-zinc-400 border-l flex flex-col gap-4"
           >
-            <Markdown>{reasoning}</Markdown>
+            <Markdown>{thinking}</Markdown>
           </motion.div>
         )}
       </AnimatePresence>

@@ -19,24 +19,24 @@ function PureSuggestedActions({
 }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'What are the advantages',
-      label: 'of using Next.js?',
-      action: 'What are the advantages of using Next.js?',
+      title: 'Explain it to me like',
+      label: 'I’m five... I just crashed the Mars Rover, and have to repair it.',
+      action: 'Explain this to me like I’m five... and I just crashed the Mars Rover.',
     },
     {
-      title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: 'What’s the worst that could',
+      label: 'happen if I just wing it during a zombie apocalypse?',
+      action: 'What’s the worst that could happen if I just wing it during a zombie apocalypse?',
     },
     {
-      title: 'Help me write an essay',
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: 'Give me the dumbest reason',
+      label: 'why pineapple on pizza is illegal in Italy.',
+      action: 'Give me the dumbest reason why pineapple on pizza is illegal in Italy.',
     },
     {
-      title: 'What is the weather',
-      label: 'in San Francisco?',
-      action: 'What is the weather in San Francisco?',
+      title: 'If I really wanted to',
+      label: 'make things worse, how would I accidentally summon a demon in JavaScript?',
+      action: 'If I really wanted to make things worse, how would I accidentally summon a demon in JavaScript?',
     },
   ];
 

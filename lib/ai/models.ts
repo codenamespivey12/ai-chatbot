@@ -1,4 +1,4 @@
-export const DEFAULT_CHAT_MODEL: string = 'chat-model';
+export const DEFAULT_CHAT_MODEL: string = 'chat-model-reasoning';
 
 export interface ChatModel {
   id: string;
@@ -9,12 +9,12 @@ export interface ChatModel {
 export const chatModels: Array<ChatModel> = [
   {
     id: 'chat-model',
-    name: 'Chat model',
-    description: 'Primary model for all-purpose chat',
+    name: 'Mojo',
+    description: 'Mojo classic',
   },
   {
     id: 'chat-model-reasoning',
-    name: 'Reasoning model',
-    description: 'Uses advanced reasoning',
+    name: 'Reasoning with Mojo',
+    description: 'Mojo got into the adderal and thinks he is a scientist',
   },
 ];
